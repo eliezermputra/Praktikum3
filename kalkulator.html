@@ -1,0 +1,47 @@
+<html>
+    <head>
+      <title>Kalkulator Sederhana</title>
+      <h1>Kalkulator</h1>
+    </head>   
+    <script language="Javascript">
+      function tambah() {
+        var val1=document.masuk.M1.value;
+        var val2=document.masuk.M2.value;
+        var hasil= parseInt(val1)+parseInt(val2);
+        document.masuk.M3.value=hasil;
+        }
+        function kurang() {
+          var val1=document.masuk.M1.value;
+          var val2=document.masuk.M2.value;
+          var hasil= parseInt(val1)-parseInt(val2);
+          document.masuk.M3.value=hasil;
+        }
+        function kali() {
+          var val1=document.masuk.M1.value;
+          var val2=document.masuk.M2.value;
+          var hasil= parseInt(val1)*parseInt(val2);
+          document.masuk.M3.value=hasil;
+        }
+        function bagi() {
+          var val1=document.masuk.M1.value;
+          var val2=document.masuk.M2.value;
+          var hasil= parseInt(val1)/parseInt(val2);
+          document.masuk.M3.value=hasil;
+        }
+    </script>        
+        <body>
+          <form method="post" name="masuk">
+          <p>Bilangan 1 <input type="text" name="M1" size="20"></p> 
+          <p>Bilangan 2 <input type="text" name="M2" size="20"> </p>
+          <p>Hasil : <input type="text" name="M3" size= "24" </td></p>
+          <p>
+          <input type="button" value="+" size="7"  onclick=tambah()> </td>
+          <input type="button" value="-" size="5" onclick=kurang()> </td>
+          <input type="button" value="x" size="5" onclick=kali()> </td>
+          <input type="button" value="/" size="5" onclick=bagi()> </td>
+          </p>
+          <input type="Reset" value="Reset" </td>
+          </form>
+        
+        </body>
+</html>
